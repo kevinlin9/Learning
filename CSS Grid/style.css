@@ -1,0 +1,8 @@
+.container {
+  background-color: #ff3399;
+  text-align: center;
+  font-size: 14pt;
+  font-family: comic sans ms;
+  font-stretch: ultra-expanded;
+  display: grid;
+}
