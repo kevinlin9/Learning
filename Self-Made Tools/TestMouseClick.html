@@ -1,0 +1,61 @@
+<!-- Kevin Lin -->
+<html>
+    <title>Mouse Click Tester</title>
+    <style>
+        body{
+            background-color:azure;
+        }
+        .container{
+            border: 2pt gray solid;
+            width: 100%;
+            height: 60%;
+            display:grid;
+            grid-template-areas: "a b";
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1em;
+            
+        }
+        .container1{
+            text-align: center;
+            border: 2pt blue solid;
+            width: 95%;
+            height: 100%;
+            display:grid;
+            grid-area: a;
+        }
+        .container2{
+            border: 2pt blue solid;
+            width: 95%;
+            height: auto;
+            grid-area: b;            
+        }
+    </style>
+    <script>
+        function initialize(){
+            outBody = document.getElementById("out");
+            numClicks = 0;
+            CLEAR = "";
+        }
+        function test(){
+            numClicks++;
+            outBody.innerHTML += numClicks + "\n";
+        }
+        function reset(){
+            outBody.innerHTML = CLEAR;
+            numClicks = 0;
+        }
+    </script>
+    <body onload = "initialize();">
+        <h1>Web Application for Testing Mouse Clicking Problems</h1>
+        <div class = "container">
+            <div class = "container1">
+                <button onclick = "test();">Click</button>
+            </div>
+            <div class = "container2">
+            <span id = "out" class = "bar"></span>
+            </div>
+        </div>
+        <button onclick = "reset();">Reset</button>
+    </body>
+</html>
