@@ -1,43 +1,68 @@
-.container1 {
-  border: 2px solid #0066cc;
+.container2 {
+    border: 2px solid #0066cc;
 
-  color: #0066cc;;
-  text-align: center;
-  font-size: 14pt;
-  font-family: times new roman;
-  display: grid;
-
-  grid-template-rows: repeat(6, [row-start] 1fr [row-end]);
-  grid-template-columns: [col-start col-1-start] 1fr [col-1-end col-2-start] 1fr [col-2-end col-3-start] 1fr [col-3-end col-end];
-
-  grid-row-gap: 5px;
-  grid-column-gap: 5px;
-
-
+    color: #0066cc;;
+    text-align: center;
+    font-size: 14pt;
+    font-family: times new roman;
+    display: grid;
+    grid-template-areas: "header header" "content sidebar" "footer footer";
+    grid-template-rows: repeat(3, [row-start] minmax(1fr, auto) [row-end]);
+    grid-template-columns: repeat(2, [col-start] minmax(1fr, auto) [col-end]);
+    grid-gap: 5px;
 }
-span {
-  background-color: #ff3399;
-  border-radius: 2px;
+.container2 > span {
+    background-color: deepskyblue;
+    border-radius: 2px;
+}
+.header {
+    grid-area: header;    
+}
+.content {
+    grid-area: content;
+}
+.sidebar {
+    grid-area: sidebar;
+}
+.footer {
+    grid-area: footer;
+}
+.container1 {
+    border: 2px solid #0066cc;
+
+    color: #0066cc;;
+    text-align: center;
+    font-size: 14pt;
+    font-family: times new roman;
+    display: grid;
+
+    grid-template-rows: repeat(6, [row-start] 1fr [row-end]);
+    grid-template-columns: [col-start col-1-start] 1fr [col-1-end col-2-start] 1fr [col-2-end col-3-start] 1fr [col-3-end col-end];
+
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+}
+.container1 > span {
+    background-color: #ff3399;
+    border-radius: 2px;
 }
 .heading {
-  grid-area: 1 / 1 / 2 / 4;
+    grid-area: 1 / 1 / 2 / 4;
 }
 .one {
-  grid-area: 2 / 1 / span 2 / span 2;
+    grid-area: 2 / 1 / span 2 / span 2;
 }
 .eight {
-  grid-area: row-start 5 / col-2-start / row-end 5 / col-end;
+    grid-area: row-start 5 / col-2-start / row-end 5 / col-end;
 }
 .nine {
-  grid-area: row-start 6 / col-start / row-end 6 / col-end;
+    grid-area: row-start 6 / col-start / row-end 6 / col-end;
 }
-
 .title {
-  border: 2px solid #0066cc;
+    border: 2px solid #0066cc;
 
-  text-align: center;
-  font-family: sans-serif;
-  color: #0066cc;
-  background-color: #00264d;
-
+    text-align: center;
+    font-family: sans-serif;
+    color: #0066cc;
+    background-color: #00264d;
 }
