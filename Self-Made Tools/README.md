@@ -2,10 +2,13 @@
 This contains random tools I make for myself on a whim.
 
 ## TestMouseClicker
-Helps show whether or not your left-mouse-button is not clicking twice when you click once.
+Assists in testing whether or not the number of left-mouse-button clicks is faulty.
 
-##s.bat
-Runs the shutdown command in 0 milliseconds
+## s.bat
+Runs the shutdown command
 
-##c.bat
-Kills the CoherentUI_HOST.exe processes to increase FPS in a game
+## r.bat
+Runs the restart command
+
+## c.bat
+Kills CoherentUI_HOST.exe processes to increase FPS
