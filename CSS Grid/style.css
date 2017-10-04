@@ -10,8 +10,12 @@
     grid-template-rows: repeat(3, [row-start] minmax(1fr, auto) [row-end]);
     grid-template-columns: repeat(2, [col-start] minmax(1fr, auto) [col-end]);
     grid-gap: 5px;
+    
+    grid-auto-flow: column;
+    grid-auto-rows: 1fr;
+    
 }
-.container2 > span {
+.container2 > span{
     background-color: deepskyblue;
     border-radius: 2px;
 }
@@ -26,6 +30,17 @@
 }
 .footer {
     grid-area: footer;
+}
+.extra1 {
+    grid-row-start: header-start;
+    grid-row-end: content-end;
+    grid-column: auto;
+    grid-column: header-end;
+}
+.extra2 {
+    grid-row: content-start / footer-end;
+    grid-column: header-end;
+    z-index: 1;
 }
 .container1 {
     border: 2px solid #0066cc;
