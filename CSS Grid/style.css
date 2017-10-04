@@ -1,8 +1,7 @@
 .container2 {
     border: 2px solid #0066cc;
-
-    color: #0066cc;;
     text-align: center;
+    color: #0066cc;;
     font-size: 14pt;
     font-family: times new roman;
     display: grid;
@@ -13,14 +12,14 @@
     
     grid-auto-flow: column;
     grid-auto-rows: 1fr;
-    
 }
 .container2 > span{
     background-color: deepskyblue;
     border-radius: 2px;
 }
 .header {
-    grid-area: header;    
+    grid-area: header;
+    
 }
 .content {
     grid-area: content;
@@ -30,17 +29,21 @@
 }
 .footer {
     grid-area: footer;
+    align-self: start;
+    justify-self: start;
 }
 .extra1 {
     grid-row-start: header-start;
     grid-row-end: content-end;
     grid-column: auto;
     grid-column: header-end;
+    z-index: 1;
+    align-self: start;
 }
 .extra2 {
     grid-row: content-start / footer-end;
     grid-column: header-end;
-    z-index: 1;
+    align-self: start;
 }
 .container1 {
     border: 2px solid #0066cc;
