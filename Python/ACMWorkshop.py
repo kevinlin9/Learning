@@ -20,3 +20,13 @@ my_dictionary = {
 }
 print(my_dictionary)
 print(my_dictionary[10])
+fav_nums.append(999)
+print(fav_nums)
+fav_nums.remove(10)
+print(fav_nums)
+print(fav_nums.pop(4))
+
+
+
+
+
