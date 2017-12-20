@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         String[] favoriteTVShows = {"The Walking Dead", "Game of Thrones", "Breaking Bad", "House"};
 
-        ListAdapter theAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, favoriteTVShows);
+        ListAdapter theAdapter = new MyAdapter(this, favoriteTVShows);
 
         ListView theListView = (ListView) findViewById(R.id.theListView);
 
