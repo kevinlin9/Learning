@@ -16,5 +16,5 @@ Kills CoherentUI_HOST.exe processes to increase FPS
 ## d.bat
 Opens dropbox in your default browser
 
-## u.bat
+## ub.bat
 Opens all UB resources in your default browser
